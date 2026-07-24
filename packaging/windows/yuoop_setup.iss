@@ -20,6 +20,7 @@ DefaultGroupName={#MyAppName}
 AllowNoIcons=yes
 LicenseFile=..\..\LICENSE
 OutputBaseFilename=yuoop-downloader-{#MyAppVersion}-windows-setup
+OutputDir=..\..\dist
 SetupIconFile=..\..\assets\icon.ico
 Compression=lzma2/ultra64
 SolidCompression=yes
