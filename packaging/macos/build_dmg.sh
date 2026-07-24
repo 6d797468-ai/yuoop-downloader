@@ -21,16 +21,20 @@ echo "=== Building macOS PyInstaller bundle with static FFmpeg ==="
 cd "$PROJECT_ROOT"
 "$PYTHON" build_exe.py --onedir --clean --bundle-ffmpeg
 
-if [ ! -d "$DIST_DIR/$APP_NAME" ]; then
-    echo "ERROR: $DIST_DIR/$APP_NAME not found. Make sure PyInstaller completed successfully."
+# PyInstaller creates dist/yuoop.app because of --name=yuoop
+if [ ! -d "$DIST_DIR/yuoop.app" ]; then
+    echo "ERROR: $DIST_DIR/yuoop.app not found. Make sure PyInstaller completed successfully."
     exit 1
 fi
+
+# Rename to the final app name
+echo "Renaming yuoop.app to $APP_NAME"
+mv "$DIST_DIR/yuoop.app" "$DIST_DIR/$APP_NAME"
 
 echo "=== Creating DMG image ==="
 if command -v create-dmg &> /dev/null; then
     create-dmg \
       --volname "Yuoop Downloader" \
-      --volicon "$PROJECT_ROOT/assets/icon.icns" \
       --window-pos 200 120 \
       --window-size 600 400 \
       --icon-size 100 \
