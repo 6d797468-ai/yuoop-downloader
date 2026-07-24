@@ -271,5 +271,5 @@ Contributions are welcome! Please ensure:
 - UI components remain responsive.
 
 ---
-
+**Nawfel Reghai**
 **Version**: 1.2.0 | **Last Updated**: 2026-07-24
