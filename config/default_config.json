@@ -1,0 +1,37 @@
+{
+  "ui": {
+    "window_width": 1200,
+    "window_height": 800,
+    "theme": "dark",
+    "confirm_on_quit": true
+  },
+  "download": {
+    "last_folder": null,
+    "last_format": "MP4 720p",
+    "parallel_workers": 2
+  },
+  "preview": {
+    "quality": "Auto",
+    "player": "ffplay"
+  },
+  "formats": {
+    "video": {
+      "MP4 1080p": "bestvideo[height<=1080]+bestaudio/best",
+      "MP4 720p": "bestvideo[height<=720]+bestaudio/best",
+      "MP4 480p": "bestvideo[height<=480]+bestaudio/best"
+    },
+    "audio": {
+      "MP3 320kbps": "bestaudio[ext=m4a]/best",
+      "MP3 192kbps": "bestaudio[ext=m4a]/best",
+      "WAV": "bestaudio/best"
+    }
+  },
+  "colors": {
+    "bg_dark": "#1e1e2e",
+    "bg_secondary": "#2d2d44",
+    "accent_red": "#ff0000",
+    "accent_blue": "#0066ff",
+    "text_primary": "#ffffff",
+    "text_secondary": "#aaaaaa"
+  }
+}

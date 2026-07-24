@@ -1,0 +1,11 @@
+Package: yuoop-downloader
+Version: 1.2.0
+Section: utils
+Priority: optional
+Architecture: amd64
+Depends: ffmpeg, python3-tk, libxcb1
+Maintainer: Yuoop Contributors <info@yuoop.org>
+Description: High-performance YouTube playlist and video downloader
+ Yuoop Downloader is a polished desktop application for analyzing, queuing,
+ and downloading YouTube playlists, videos, mixes, and channels.
+ Includes built-in media preview and audio conversion options.

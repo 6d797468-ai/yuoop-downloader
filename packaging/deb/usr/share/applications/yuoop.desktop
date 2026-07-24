@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Yuoop Downloader
+Comment=Analyze and download YouTube playlists and videos
+Exec=/usr/bin/yuoop
+Icon=yuoop
+Terminal=false
+Type=Application
+Categories=AudioVideo;Utility;Network;
+Keywords=youtube;downloader;video;audio;mp3;
