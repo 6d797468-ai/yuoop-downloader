@@ -273,3 +273,7 @@ Contributions are welcome! Please ensure:
 ---
 
 **Version**: 1.2.0 | **Last Updated**: 2026-07-24
+
+---
+
+**Nawfel Reghai**
